@@ -10,7 +10,7 @@
 
 ### `npm i json-loader`
 
-### hum
+### humd.
 
 ### `npm test`
 
