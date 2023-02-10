@@ -1,6 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import data from "./watsonLog.json";
+import "./App.css";
 
+export const personalTimeStamp = () => {
+  return (
+    <>
+      <div>
+        <div>id : {data.id}</div>
+        <div>start : {data.start}</div>
+        <div>stop : {data.stop}</div>
+        <div>
+          <label>Country :</label>
+        </div>
+      </div>
+    </>
+  );
+};
 function App() {
   return (
     <div className="App">
