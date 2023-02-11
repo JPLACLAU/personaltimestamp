@@ -1,18 +1,12 @@
-import data from "./watsonLog.json";
-import "./App.css";
+import React from "react";
+import JsonData from "./data/watsonLog.json";
 
-function Watson() {
+export default function Watson() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          <div>id : {data.id}</div>
-          <div>start : {data.start}</div>
-          <div>stop : {data.stop}</div>
-        </p>
-      </header>
+      {JsonData.map((data, key) => {
+        return <h1 key={key}>{data.start}</h1>;
+      })}
     </div>
   );
 }
-
-export default Watson;

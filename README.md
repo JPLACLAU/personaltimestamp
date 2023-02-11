@@ -9,3 +9,5 @@
 `npm i json-loader`
 
 just testing for now
+
+current version: 0.1.1
